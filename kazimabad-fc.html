@@ -182,7 +182,6 @@
     background:var(--gold);
     z-index:-1;
   }
-  /* extrusion slices to fake depth on the rim */
   .crest-rim{
     position:absolute; inset:0; transform-style:preserve-3d;
   }
@@ -497,8 +496,6 @@
   </div>
 </section>
 
-
-
 <section id="fixtures">
   <div class="section-head">
     <h2>Weekly Practice</h2>
@@ -608,6 +605,7 @@
       inner.style.transform = 'rotateY(0deg) rotateX(0deg)';
     });
   });
+
   // Scroll reveal for cards and rows
   const revealTargets = document.querySelectorAll('.player-card, .legend-card, .fixture, .stat');
   revealTargets.forEach(el => el.classList.add('reveal'));
